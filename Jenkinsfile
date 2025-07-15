@@ -8,7 +8,7 @@ pipeline{
         }
         stage('build'){
             steps{
-                sh "docker build -t sample-react-app -f Dockerfile.dev."
+                sh "docker build -t sample-react-app -f Dockerfile.dev ."
             }
         }
         stage('test'){
