@@ -6,6 +6,11 @@ pipeline{
                 checkout scm
             }
         }
+        stage('build'){
+            steps{
+                sh "docker build -t sample-react-app ."
+            }
+        }
     }
 
 }
