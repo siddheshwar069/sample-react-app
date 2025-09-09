@@ -18,4 +18,4 @@ jobs:
       - name: Check current working directory
         run: pwd
       - name: build docker image
-        run: docker build -t sample-react-app -f ./Dockerfile.dev .
+        run: docker build -t sample-react-app -f ${{ github.workspace }}//Dockerfile.dev ${{ github.workspace }}/
