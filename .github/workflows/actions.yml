@@ -20,4 +20,5 @@ jobs:
       - name: build docker image
         run: |
           cd /home/runner/work/sample-react-app/sample-react-app
+          ls -al
           docker build -t sample-react-app -f Dockerfile.dev .
