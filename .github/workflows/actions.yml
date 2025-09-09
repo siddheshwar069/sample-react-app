@@ -14,3 +14,5 @@ jobs:
     steps:
       - name: build docker image
         run: docker build -t sample-react-app -f Dockerfile.dev .
+        with:
+          context: .
